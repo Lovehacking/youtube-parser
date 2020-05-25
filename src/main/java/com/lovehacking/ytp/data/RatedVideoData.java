@@ -18,7 +18,7 @@ public class RatedVideoData extends VideoData {
 
     @Override
     public String toString() {
-        return rate + " - " + getTitle();
+        return getTitle() + " - " + "[" + getViewCount() + " views; " + getMonthAge() + " months ago]";
     }
 }
 
