@@ -28,6 +28,6 @@ public class VideoConverter implements Converter<VideoData, Video> {
 
         Period period = Period.between(now, videoPublishingDate);
         int age = Math.abs(period.getYears() * 12 + period.getMonths());
-        return age == 0 ? MINIMAL_AGE : age;
+        return Math.max(MINIMAL_AGE, age);
     }
 }
