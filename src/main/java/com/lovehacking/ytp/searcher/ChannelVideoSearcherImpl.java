@@ -66,7 +66,7 @@ public class ChannelVideoSearcherImpl implements ChannelVideoSearcher {
 
 
         if (subscriberCount.equals(BigInteger.ZERO)) {
-            throw new RuntimeException("CHANNEL " + channel.getSnippet().getTitle() + "with id '" + channelId + "' has 0 subscribers");
+            throw new RuntimeException("CHANNEL with id '" + channelId + "' has 0 subscribers");
         }
         return subscriberCount;
     }
